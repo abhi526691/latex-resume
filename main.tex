@@ -1,0 +1,245 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Abhishek Pandey} \\ \vspace{1pt}
+    \begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} cccc}
+        \small\faMapMarker\ Scarborough, ON M1P 3A1 & 
+        \small\href{mailto:abhi526691shek@gmail.com}{\faEnvelope\ \underline{abhi526691shek@gmail.com}} &
+        \small\faLinkedin\ \href{https://www.linkedin.com/in/abhishekpandey--/}{\underline{LinkedIn}} &
+        \small\faGithub\ \href{https://github.com/abhi526691}{\underline{GitHub}}
+    \end{tabular*}
+    \vspace{-8pt}
+\end{center}
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {LOYALIST COLLEGE}{Sep 2023 -- Apr 2025}
+      {Ontario College Graduate Certificate in AI and Data Science}{Scarborough, ON}
+    \resumeSubheading
+      {VEL TECH RANGARAJAN DR SAGUNTHALA R\&D COLLEGE}{Sep 2017 -- July 2021}
+      {Bachelor in Technology, Computer Science and Engineering}{Chennai, IN}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dimensionless Technologies}{Jan 2022 -- Sept 2023}
+      {Full Stack Generative AI Engineer | Research \& Development Unit}{Remote}
+      \resumeItemListStart
+        \resumeItem{Automated data reconciliation by designing \& deploying the reconciliation feature in \textbf{AUSHADHAI}, leveraging advanced algorithms to align and resolve discrepancies across pharmacy systems, reducing reconciliation time by 40\%.}
+        \resumeItem{Developed scalable backend APIs using Django and integrated them with Azure services, implementing optimized query handling and cloud solutions to improve system performance and data processing efficiency by 35\%.}
+        \resumeItem{Led the automation of document processing and image recognition tasks in \textbf{PROPELPRO}, integrating Retrieval-Augmented Generation (RAG) with AI-driven solutions to increase processing efficiency by 40\% and contribute to a 20\% revenue growth through enhanced client deliverables.}
+        \resumeItem{Designed pipelines for Q\&A and summarization using OpenAI APIs \& Vector databases (Pinecone), streamlining large document analysis workflows to boost user productivity by 30\% while ensuring scalability for advanced data solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Ameex Technologies PVT LTD}{Feb 2021 -- Nov 2021}
+      {Associate Software Engineer | Research \& Development Unit}{Chennai, IN}
+      \resumeItemListStart
+        \resumeItem{Developed and tested RESTful APIs to optimize backend processes, improve data management, and ensure seamless integration with client applications for enhanced performance.}
+        \resumeItem{Designed and implemented user-centric interfaces while conducting thorough testing to deliver intuitive UI/UX, improving user satisfaction and application reliability.}
+        \resumeItem{Collaborated with cross-functional teams to debug and optimize application workflows, reducing system errors and ensuring on-time project delivery.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{ResearchIQ} $|$ \emph{Django, Streamlit, Chromadb, Groq, Tensorflow, Docker, Adobe PDF Service, Hashlib, NLP}}{}
+          \resumeItemListStart
+            \resumeItem{Built an advanced research paper analysis tool that allows users to upload PDFs of any length, generating detailed section-wise summaries and enabling Q\&A functionality using Llama-70B embeddings.}
+            \resumeItem{Leveraged Adobe PDF services and Open-Source Groq APIs to perform ETL on PDF content into CSV format, achieving a 50\% improvement in summarization and Q\&A efficiency, and delivering in-depth document insights.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Text-To-SQL (TTSQL)} $|$ \emph{Python, Gemini, Streamlit, SQLite, Pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a Text-to-SQL app using Gemini Pro, enabling users to generate SQL queries from natural language input, thereby improving database accessibility and user productivity.}
+            \resumeItem{Created a Text-to-SQL app to facilitate self-service analytics and simplify database accessibility for GTM teams.}
+            \resumeItem{Built functionality to upload DB/SQL files, scrape schema details, and use Gemini to generate and execute SQL commands, eliminating the need for SQL software and simplifying data retrieval.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+
+
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Full Stack Development}{: HTML, CSS, React.js, Flask, Django, Node.js, JavaScript, Java, C, Go} \\
+    \textbf{ML Ops/DevOps}{: AWS, Azure, GCP, Docker, GitHub, Jenkins, Kubernetes} \\
+    \textbf{Data Engineering}{: Python, SQL, Apache Spark, Hadoop, MongoDB, Cassandra, Tableau, Redis} \\
+    \textbf{AI/ML}{: PyTorch, TensorFlow, Scikit-learn, Keras, AWS Sagemaker, Azure Cognitive Services, Fine-Tuning LLM Models} \\
+    }}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{D2C Chief Igniter - Unstop}{: Streamlined the approval process for campus events, competitions, and workshops, accelerating event execution and enhancing campus engagement.}
+    }}
+    \small{\item{
+        \textbf{Winner - First Place at Prakalpa Z-20 Online Project Contest}{: Recognized for the AI-driven project \textit{"DESTROY COVID-19"}, organized by Vel Tech in collaboration with the Computer Society of India (CSI).}
+    }}
+\end{itemize}
+\vspace{-10pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{PCAP: Programming Essentials in Python}{ - Cisco}
+    }}
+    \small{\item{
+        \textbf{Deep Learning}{ - NPTEL}
+    }}
+    \small{\item{
+        \textbf{Data Analysis with Python}{ - Cognitive Class}
+    }}
+    \small{\item{
+        \textbf{Deep Learning Specialization}{ - DeepLearning.ai by Andrew Ng}
+    }}
+    \small{\item{
+        \textbf{Hadoop Foundations - Level 1}{ - IBM}
+    }}
+\end{itemize}
+\vspace{-10pt}
+
+
+\end{document}
